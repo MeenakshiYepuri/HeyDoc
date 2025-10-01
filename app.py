@@ -4939,6 +4939,7 @@ if __name__ == "__main__":
         doctors_collection.insert_one({"username": "drpriya", "password": "password123"})
         print("Default doctor 'drpriya' created with password 'password123'. Please change this in production!")
     
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
     
     
