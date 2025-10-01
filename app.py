@@ -845,7 +845,7 @@ home_template = """
 """
 
 # Reusable Appointment Form Template (for both Add and Edit)
-appointment_form_template = """
+appointment_form_template = r"""
 <!DOCTYPE html>
 <html lang="en" class="bg-gray-100">
 <head>
